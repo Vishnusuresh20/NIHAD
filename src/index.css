@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/70 dark:bg-slate-800/60 backdrop-blur-lg border border-white/20 dark:border-white/10 shadow-xl rounded-2xl;
+  }
+  .glass-nav {
+    @apply bg-white/80 dark:bg-darker/80 backdrop-blur-md border-b border-white/10 dark:border-slate-800 shadow-sm;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+  }
+  .bg-gradient-mesh {
+    background-color: #0f172a;
+    background-image: 
+      radial-gradient(at 40% 20%, hsla(228,100%,74%,1) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%);
+  }
+  .btn-primary {
+    @apply px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-medium hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 transform hover:-translate-y-1 active:scale-95 flex items-center gap-2;
+  }
+  .btn-secondary {
+    @apply px-6 py-3 rounded-full bg-white/10 dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 font-medium hover:bg-slate-100 dark:hover:bg-slate-700 transition-all duration-300 flex items-center gap-2;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a; 
+}
+::-webkit-scrollbar-thumb {
+  background: #334155; 
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569; 
+}
+
+/* Animation utilities */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
