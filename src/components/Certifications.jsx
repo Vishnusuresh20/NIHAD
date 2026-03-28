@@ -23,8 +23,8 @@ const certifications = [
   {
     id: 3,
     title: "Bachelor of Computer Applications",
-    issuer: "BANGLORE UNIVERSITY",
-    year: "2021",
+    issuer: "BANGLORE NORTH UNIVERSITY",
+    year: "2025",
     icon: <GraduationCap className="text-white" size={24} />,
     color: "from-emerald-500 to-teal-500",
     description: "BCA Graduate with strong foundation in computer science, programming, and software development."

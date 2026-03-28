@@ -12,7 +12,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "B2B Educational Portal",
+    title: "Educational Portal",
     description: "A strategic platform connecting educational institutions with prospective students, streamlining the B2B deal process and lead management.",
     tech: ["Python", "Flask", "Web Technologies"],
     icon: <Globe size={24} />,
