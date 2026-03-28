@@ -84,34 +84,6 @@ const Hero = () => {
                 </div>
               </div>
               
-              {/* Floating badges */}
-              <motion.div 
-                animate={{ y: [-10, 10, -10] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-10 -left-10 glass-card p-3 md:p-4 flex items-center gap-3"
-              >
-                <div className="text-primary">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                </div>
-                <div>
-                  <div className="font-bold text-slate-800 dark:text-white">B2B Deals</div>
-                  <div className="text-xs text-slate-500">Expert</div>
-                </div>
-              </motion.div>
-
-              <motion.div 
-                animate={{ y: [10, -10, 10] }}
-                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute bottom-10 -right-4 glass-card p-3 md:p-4 flex items-center gap-3"
-              >
-                <div className="text-secondary">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-                </div>
-                <div>
-                  <div className="font-bold text-slate-800 dark:text-white">50+ Placements</div>
-                  <div className="text-xs text-slate-500">Students</div>
-                </div>
-              </motion.div>
             </motion.div>
           </div>
         </div>

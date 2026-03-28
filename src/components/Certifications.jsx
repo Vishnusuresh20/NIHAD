@@ -23,7 +23,7 @@ const certifications = [
   {
     id: 3,
     title: "Bachelor of Computer Applications",
-    issuer: "University of Kerala",
+    issuer: "BANGLORE UNIVERSITY",
     year: "2021",
     icon: <GraduationCap className="text-white" size={24} />,
     color: "from-emerald-500 to-teal-500",

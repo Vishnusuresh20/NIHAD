@@ -61,9 +61,7 @@ const Footer = () => {
 
         <div className="border-t border-slate-800 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
           <p>&copy; {new Date().getFullYear()} Nihad Kv. All rights reserved.</p>
-          <p className="flex items-center gap-1">
-            Crafted with <Heart size={12} className="text-red-500 fill-red-500" /> in India
-          </p>
+
         </div>
       </div>
     </footer>

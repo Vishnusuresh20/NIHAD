@@ -88,7 +88,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
           </button>
           <a href="#contact" className="btn-primary text-sm py-2 px-5">
-            Hire Me
+            Connect
           </a>
         </div>
 
@@ -136,7 +136,7 @@ const Navbar = ({ theme, toggleTheme }) => {
               ))}
               <li className="mt-2">
                 <a href="#contact" className="btn-primary block text-center py-2" onClick={() => setIsMobileMenuOpen(false)}>
-                  Hire Me
+                  Connect
                 </a>
               </li>
             </ul>

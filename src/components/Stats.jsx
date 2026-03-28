@@ -3,7 +3,7 @@ import { Briefcase, Users, Handshake, Star } from 'lucide-react';
 
 const statsData = [
   { id: 1, icon: <Briefcase />, count: '4+', label: 'Years Experience' },
-  { id: 2, icon: <Users />, count: '50+', label: 'Students Placed' },
+  { id: 2, icon: <Users />, count: '50+', label: 'Student success' },
   { id: 3, icon: <Handshake />, count: '10+', label: 'Partner Institutions' },
   { id: 4, icon: <Star />, count: '100%', label: 'Client Satisfaction' },
 ];

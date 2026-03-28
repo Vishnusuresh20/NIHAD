@@ -5,34 +5,34 @@ import { Quote, ChevronLeft, ChevronRight, Star } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    name: "Rajesh Kumar",
-    role: "Principal, National Institute of Technology",
-    text: "Nihad's strategic approach to educational marketing transformed how we attract students. His B2B expertise is unmatched in the industry.",
-    initials: "RK",
+    name: "Rahul Sharma",
+    role: "MBBS Student, Mangalore",
+    text: "Nihad's guidance was instrumental in my medical admission process. He made the complex paperwork feel simple and helped me secure a seat in my dream college.",
+    initials: "RS",
     color: "bg-blue-500"
   },
   {
     id: 2,
-    name: "Priya Menon",
-    role: "Director, Kerala Education Hub",
-    text: "Working with Nihad was a game-changer for our institution. He closed deals we thought were impossible and brought quality students to our campus.",
-    initials: "PM",
+    name: "Sreelakshmi Nair",
+    role: "B.Tech Student, Bengaluru",
+    text: "I was confused about which path to take after my higher secondary. Nihad's career counseling gave me clarity and led me to a great engineering college.",
+    initials: "SN",
     color: "bg-purple-500"
   },
   {
     id: 3,
-    name: "Ahmed Siddiqui",
-    role: "Parent & Client",
-    text: "Nihad guided my daughter through the entire admission process. His knowledge and dedication made a stressful experience completely smooth.",
-    initials: "AS",
+    name: "Mohammed Faizal",
+    role: "MBA Aspirant",
+    text: "The admission consulting provided by Nihad is top-notch. He understands the requirements of every student and suggests the best institutional options.",
+    initials: "MF",
     color: "bg-emerald-500"
   },
   {
     id: 4,
-    name: "Suresh Nair",
-    role: "CEO, EduTech Solutions",
-    text: "His marketing strategies for our institution resulted in a 40% increase in enrollment within just one academic year. Truly remarkable results.",
-    initials: "SN",
+    name: "Karthick S",
+    role: "BCA Graduate, Calicut",
+    text: "From entrance exam tips to final placement guidance, Nihad has been a mentor throughout my academic journey. Highly recommended for any student.",
+    initials: "KS",
     color: "bg-orange-500"
   }
 ];
@@ -88,11 +88,11 @@ const Testimonials = () => {
                     "{testimonials[currentIndex].text}"
                   </p>
                   
-                  <div className="flex items-center gap-4">
-                    <div className={`w-14 h-14 rounded-full flex items-center justify-center text-white font-bold text-xl ${testimonials[currentIndex].color} shadow-lg ring-4 ring-white dark:ring-slate-800`}>
+                  <div className="flex flex-col items-center gap-4">
+                    <div className={`w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl ${testimonials[currentIndex].color} shadow-lg ring-4 ring-white dark:ring-slate-800 mb-2`}>
                       {testimonials[currentIndex].initials}
                     </div>
-                    <div className="text-left">
+                    <div className="text-center">
                       <h4 className="font-bold text-slate-800 dark:text-white text-lg">{testimonials[currentIndex].name}</h4>
                       <p className="text-sm font-medium text-primary">{testimonials[currentIndex].role}</p>
                     </div>
