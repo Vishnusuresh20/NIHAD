@@ -6,7 +6,7 @@ const certifications = [
     id: 1,
     title: "Artificial Intelligence Certification",
     issuer: "Keonics",
-    year: "2023",
+    year: "2025",
     icon: <Award className="text-white" size={24} />,
     color: "from-blue-500 to-cyan-500",
     description: "Certified in AI fundamentals, machine learning concepts, and practical applications of artificial intelligence."
